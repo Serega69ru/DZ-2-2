@@ -3,15 +3,15 @@
 public class Main {
     public static void main(String[] args) {
         int bal = 100;
-        int pop = 1535;
-        int bounce = pop / 100;
+        int refill = 1535;
+        int bounce = refill / 100;
         int bal1;
-        if (pop >= 1000) {
-            bal1 = bal + pop + bounce;
+        if (refill >= 1000) {
+            bal1 = bal + refill + bounce;
         } else {
-            bal1 = bal + pop;
+            bal1 = bal + refill;
         }
-        System.out.println("При пополнении на сумму " + pop + " при текущем балансе " + bal);
+        System.out.println("При пополнении на сумму " + refill + " при текущем балансе " + bal);
         System.out.println("На вашем счету будет сумма " + bal1);
         System.out.println("Сумма бонусов " + bounce);
     }
